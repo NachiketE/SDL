@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:text="Music Player" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Media Player"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff7aff24"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="PAUSE" />
+
+   <Button
+       android:id="@+id/play"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="PLAY"
+       android:layout_toRightOf="@+id/pause"
+       android:layout_marginTop="300dp"
+       android:layout_marginLeft="30dp"/>
+        <Button
+            android:id="@+id/stop"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="STOP"
+            android:layout_toRightOf="@+id/play"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="30dp"/>
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_alignStart="@+id/textview"
+        android:layout_alignRight="@+id/textview"
+        android:layout_alignEnd="@+id/textview"
+        android:layout_below="@+id/play" />
+
+<TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pause"
+    android:layout_toLeftOf="@+id/seekBar"
+    android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pause"
+        android:layout_toRightOf="@+id/seekBar"
+        android:textSize="20dp"
+        />
+
+
+
+</RelativeLayout>
